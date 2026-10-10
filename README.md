@@ -88,7 +88,7 @@ Meu diferencial está em transitar entre camadas: entendo o hardware que gera os
 ## Onde me encontrar
 
 - 🌐 **Site:** [carlosvieira.eng.br](https://carlosvieira.eng.br)
-- 💼 **LinkedIn:** [linkedin.com/in/carloslpv](https://www.linkedin.com/in/carloslpv/))
+- 💼 **LinkedIn:** [linkedin.com/in/carloslpv](https://www.linkedin.com/in/carloslpv/).
 - ✉️ **E-mail:** carloscelpv@outlook.com
 
 ---
