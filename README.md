@@ -22,9 +22,24 @@ Também dou aula de Comunicação de Dados e Aplicações Distribuídas no curso
 
 ## No que estou trabalhando
 
+### [machine-telemetry](https://github.com/carloslpv/machine-telemetry)
+
+Telemetria de máquinas industriais, do CLP ao OEE. Um gateway de borda lê o CLP que a máquina já tem, por OPC UA ou S7, e envia por MQTT ou, onde não há rede, por LoRaWAN. A plataforma guarda o histórico de estados e mostra quanto tempo a máquina parou e por quê, quanto produziu e qual o OEE. É a continuação do meu TCC, que testou essa arquitetura com um S7-1200, um Raspberry Pi e uma TV Box.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/carloslpv/machine-telemetry/main/docs/img/dashboard.png" alt="Painel do machine-telemetry no Grafana com estado da máquina, OEE, linha do tempo de estados, produção por hora e paradas por causa" width="720">
+</p>
+
+| Parte | O que tem lá |
+| --- | --- |
+| [gateway](https://github.com/carloslpv/machine-telemetry/tree/main/gateway) | Gateway de borda em Java 25: OPC UA, cliente S7, fila local em SQLite, MQTT e modem LoRaWAN por comandos AT |
+| [platform](https://github.com/carloslpv/machine-telemetry/tree/main/platform) | Spring Boot 4 e PostgreSQL: ingestão MQTT e The Things Network, paradas e OEE |
+| [plc-sim](https://github.com/carloslpv/machine-telemetry/tree/main/plc-sim) | S7-1200 simulado em Python, para rodar a demonstração sem hardware |
+| [comissionamento](https://github.com/carloslpv/machine-telemetry/blob/main/docs/comissionamento.md) | Passo a passo para ligar numa máquina de verdade, do TIA Portal à TTN |
+
 ### [cold-monitor](https://github.com/carloslpv/cold-monitor-infra)
 
-Monitoramento de temperatura para geladeiras, freezers e câmaras frias. Os sensores enviam leituras, um painel mostra tudo ao vivo e o sistema avisa no Telegram quando a temperatura sai da faixa ou quando um sensor para de responder. Por enquanto as leituras vêm de um simulador; o próximo passo é ligar um sensor real com ESP32.
+Monitoramento de temperatura para geladeiras, freezers e câmaras frias. Os sensores enviam leituras, um painel mostra tudo ao vivo e o sistema avisa no Telegram quando a temperatura sai da faixa ou quando um sensor para de responder. As leituras podem vir de um simulador ou de um ESP32 com sondas DS18B20, que envia por MQTT sem perder dados quando o Wi-Fi cai.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/carloslpv/cold-monitor-infra/main/docs/screenshots/dashboard-live.gif" alt="Painel do cold-monitor recebendo leituras ao vivo" width="720">
@@ -36,6 +51,7 @@ Monitoramento de temperatura para geladeiras, freezers e câmaras frias. Os sens
 | [cold-monitor-backend](https://github.com/carloslpv/cold-monitor-backend) | API em Java 25 e Spring Boot 4, PostgreSQL, atualização em tempo real (SSE) e alertas |
 | [cold-monitor-dashboard](https://github.com/carloslpv/cold-monitor-dashboard) | Painel em React e TypeScript com gráficos ao vivo |
 | [cold-monitor-simulator](https://github.com/carloslpv/cold-monitor-simulator) | Simulador de sensores, com uma virtual thread por equipamento |
+| [cold-monitor-edge](https://github.com/carloslpv/cold-monitor-edge) | Firmware do ESP32 em C (ESP-IDF), MQTT e a ponte para o backend |
 
 Os READMEs estão em português e inglês e explicam o porquê de cada escolha.
 
@@ -74,12 +90,13 @@ Os READMEs estão em português e inglês e explicam o porquê de cada escolha.
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white)
 ![MQTT](https://img.shields.io/badge/MQTT-660066?style=flat-square&logo=mqtt&logoColor=white)
 ![LoRaWAN](https://img.shields.io/badge/LoRaWAN-1A1A1A?style=flat-square)
+![OPC UA](https://img.shields.io/badge/OPC_UA-1A1A1A?style=flat-square)
 ![CLP Siemens](https://img.shields.io/badge/CLP_Siemens-009999?style=flat-square&logo=siemens&logoColor=white)
 
 ## Um pouco mais
 
 - Pós-graduado em Indústria 4.0 e Inteligência Artificial pela Unoesc (2025).
-- Publiquei no XXXVII Congresso de Iniciação Científica do INATEL (2025) um sistema de monitoramento em nuvem de CLP para IIoT, com OPC UA, Profinet e LoRaWAN.
+- Publiquei no XXXVII Congresso de Iniciação Científica do INATEL (2025) um sistema de monitoramento em nuvem de CLP para IIoT, com OPC UA, Profinet e LoRaWAN. Ele virou o [machine-telemetry](https://github.com/carloslpv/machine-telemetry).
 - No trabalho, montei o agente de IA da instituição com Spring AI e Ollama.
 
 ## Vamos conversar
