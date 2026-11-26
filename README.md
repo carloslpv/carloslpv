@@ -14,7 +14,7 @@ Joaçaba, Santa Catarina
 
 ---
 
-Sou engenheiro de computação e trabalho há quase três anos com desenvolvimento backend em Java. Hoje faço parte do time que mantém o sistema acadêmico da Unoesc, aquele que cuida de matrícula, financeiro, diplomas e de toda a integração com outros sistemas. Boa parte do meu trabalho recente tem sido tirar pedaços de um sistema antigo e transformá-los em serviços menores com Spring Boot, além de revisar código e ajudar quem está chegando no time.
+Sou engenheiro de computação e trabalho há quase três anos com desenvolvimento backend em Java. Hoje sou Analista de Desenvolvimento II no time que mantém o sistema acadêmico da Unoesc, aquele que cuida de matrícula, financeiro, diplomas e de toda a integração com outros sistemas. Boa parte do meu trabalho recente tem sido tirar partes de um sistema com mais de 20 anos e transformá-las em serviços menores com Spring Boot 4 e Java 25, além de participar das decisões de arquitetura, revisar código e ajudar quem está chegando no time.
 
 Antes de programar em tempo integral, passei pelo lado físico da tecnologia: redes, data center e equipamentos industriais em uma indústria de alimentos. Na faculdade, o que mais me prendeu foi a parte de baixo nível: microcontroladores, firmware em C e CLPs. Esse interesse continua, e os projetos de que mais gosto são aqueles em que o dado nasce num sensor e termina num sistema que alguém usa de verdade.
 
@@ -64,6 +64,7 @@ Os READMEs estão em português e inglês e explicam o porquê de cada escolha.
 ![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white)
 ![Hibernate](https://img.shields.io/badge/Hibernate%20%2F%20JPA-59666C?style=flat-square&logo=hibernate&logoColor=white)
 ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat-square)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
@@ -72,6 +73,7 @@ Os READMEs estão em português e inglês e explicam o porquê de cada escolha.
 ![GitLab CI](https://img.shields.io/badge/GitLab_CI-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=claude&logoColor=white)
 
 **Em projetos próprios**
 
@@ -97,7 +99,7 @@ Os READMEs estão em português e inglês e explicam o porquê de cada escolha.
 
 - Pós-graduado em Indústria 4.0 e Inteligência Artificial pela Unoesc (2025).
 - Publiquei no XXXVII Congresso de Iniciação Científica do INATEL (2025) um sistema de monitoramento em nuvem de CLP para IIoT, com OPC UA, Profinet e LoRaWAN. Ele virou o [machine-telemetry](https://github.com/carloslpv/machine-telemetry).
-- No trabalho, montei o agente de IA da instituição com Spring AI e Ollama.
+- No trabalho, uso o Claude Code no dia a dia, com servidores MCP, hooks e skills de revisão de código.
 
 ## Vamos conversar
 O jeito mais fácil de me encontrar é pelo [site](https://carlosvieira.eng.br) ou pelo [LinkedIn](https://www.linkedin.com/in/carloslpv/).
